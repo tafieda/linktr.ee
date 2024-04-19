@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Codex Graphix</title>
+    <!-- wideley used favicon -->
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "105560260831642");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <section>
+        <!--Head-->
+        <div class="head-div">
+            <img src="images/logo.png" alt="logo" width="96px" class="logo-img">
+            <h2>Codex Graphix Design</h2>
+            <p>My name is Khalil Jamil Ahmad, a graphics designer based in Khartoum,Sudan!</p>
+            <p><i>Interact, collaborate and connect with me!</i></p>
+        </div>
+        <!--Links-->
+        <div class="link-div">
+            <a href="https://www.youtube.com/channel/UClYG4r5Ji2w67kPKtCq63UA" class="alink">Youtube Channel</a>
+            <a href="https://www.facebook.com/codexgraphix/" class="alink">Facebook Page</a>
+            <a href="https://www.instagram.com/codex.graphix/" class="alink">Instagram Account</a>
+            <a href="https://t.me/codexgraphix_ch" class="alink">Telegram Channel</a>
+            <a href="https://codexgraphix.xp3.biz/" class="alink" target="_blank">Official Website</a>
+        </div>
+        <footer class="copyright">
+        <p>&copy; Copyright 2022 Codex Graphix - <a class="me" href="https://github.com/tafeedah/" target="_blank">Made with ❤️ by Khalil Jamil Ahmad</a></p>
+        </footer>
+    </section>
+</body>
+
+</html>
